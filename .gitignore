@@ -1,0 +1,5 @@
+*.pyc
+htmlcov
+.coverage
+coverage.xml
+*.loops_as_a_service_dev
