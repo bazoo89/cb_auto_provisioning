@@ -1,9 +1,9 @@
 {
   "name": "loops_as_a_service",
   "description": "Loops auto provisioning",
-  "version": "0.1.0",
-  "readme_url": "https://example.com/README.md",
-  "changelog_url": "https://example.com/CHANGELOG.md",
+  "version": "0.1.1",
+  "readme_url": "https://github.com/bazoo89/loops_as_a_service/blob/main/README.md",
+  "changelog_url": "https://github.com/bazoo89/loops_as_a_service/blob/main/CHANGELOG.md",
   "capabilities": {
     "asset_purchase_request_processing": [
       "draft",
