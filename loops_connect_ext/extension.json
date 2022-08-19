@@ -1,0 +1,62 @@
+{
+  "name": "loops_as_a_service",
+  "description": "Loops auto provisioning",
+  "version": "0.1.0",
+  "readme_url": "https://example.com/README.md",
+  "changelog_url": "https://example.com/CHANGELOG.md",
+  "capabilities": {
+    "asset_purchase_request_processing": [
+      "draft",
+      "tiers_setup",
+      "pending",
+      "inquiring",
+      "approved",
+      "failed",
+      "scheduled",
+      "revoking",
+      "revoked"
+    ],
+    "asset_change_request_processing": [
+      "pending",
+      "inquiring",
+      "failed"
+    ],
+    "asset_cancel_request_processing": [
+      "pending",
+      "inquiring",
+      "failed"
+    ],
+    "asset_suspend_request_processing": [
+      "pending",
+      "inquiring",
+      "failed"
+    ],
+    "asset_resume_request_processing": [
+      "pending",
+      "inquiring",
+      "failed"
+    ],
+    "asset_purchase_request_validation": [
+      "draft",
+      "tiers_setup",
+      "pending",
+      "inquiring",
+      "approved",
+      "failed"
+    ]
+  },
+  "schedulables": [
+    {
+      "name": "Schedulable method mock",
+      "description": "It can be used to test DevOps scheduler.",
+      "method": "process_asset_resume_request"
+    }
+  ],
+  "variables": [
+    {
+      "name": "ASSET_REQUEST_APPROVE_TEMPLATE_ID",
+      "initial_value": "TL-683-977-732",
+      "secure": false
+    }
+  ]
+}
